@@ -19,7 +19,8 @@ before_install:
   - psql -c "GRANT ALL PRIVILEGES ON DATABASE vmq_test_database to vmq_test_user;" -U postgres
 
 sudo: required
-dist: trusty
+#dist: trusty
+dist: bionic
 language: erlang
 install: true
 otp_release:
