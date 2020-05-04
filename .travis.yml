@@ -20,7 +20,7 @@ before_install:
 
 sudo: required
 #dist: trusty
-dist: bionic
+dist: xenial
 language: erlang
 install: true
 otp_release:
