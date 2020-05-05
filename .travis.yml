@@ -18,9 +18,9 @@ before_install:
   - psql -c "CREATE USER vmq_test_user WITH PASSWORD 'vmq_test_password';" -U postgres
   - psql -c "GRANT ALL PRIVILEGES ON DATABASE vmq_test_database to vmq_test_user;" -U postgres
   
-type: shell
+- type: shell
   scripts:
-  - files/erlang.sh
+  - erlang.sh
 
 sudo: required
 #dist: trusty
